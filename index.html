@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Connex</title>
+<link rel="stylesheet" href="media/bootstrap.min.css">
+<link rel="stylesheet" href="media/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="media/style.css">
+\
+
+</head>
+
+
+<body>
+
+
+
+<!-- 
+<div class="jumbotron text-center">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+
+ -->
+	 	
+<section id="pre_loader"></section>
+
+<section id="home">
+
+
+<div id="particles1-js"></div>	
+<div id="particles-js"></div>
+
+
+
+	<div class="topset wow fadeInDown" data-wow-delay="1.3s">
+		<div class="row">
+
+			<div class="mode">
+				<div id="optimization">
+				<div id="optimized"></div> 
+			</div>
+				
+    			<div id="powered">Dark Mode </div>
+			</div>
+			<div id="brand">
+				<div class="brand_menu">
+					<ul>
+						<li><a id="about" href="#">About Us <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+
+								<div id="dropdown_menu1">
+								<!-- <ul>
+									
+									<li><a href="#">Mission Connex</a></li>
+									<li><a href="#">Vision Connex</a></li>
+									<li><a href="#">FAQ <i class="fa fa-caret-right" aria-hidden="true"></i> </a></li>
+								</ul> -->
+							</div>
+
+
+						</li>
+						<li><a id="serviced" href="#">Our Services <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+
+							<div id="dropdown_menu">
+								<!-- <ul>
+									
+									<li><a href="#">Mission Connex</a></li>
+									<li><a href="#">Vision Connex</a></li>
+									<li><a href="#">FAQ <i class="fa fa-caret-right" aria-hidden="true"></i> </a></li>
+								</ul> -->
+							</div>
+
+						</li>
+						<li><a id="contacted" href="#">Contact Us </a>
+							<div id="cntct_line">
+								
+					        </div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</div>	
+
+ 
+	<div class="navBottom wow fadeInUp" data-wow-delay="1.3s">
+
+		<div class="copyright">
+			<p>Copyright © 	Connex | 2023</p>
+		</div>	
+		<div class="terms_dev">
+			<div id="terms">
+				<p>Privacy Terms</p>
+
+					<div id="terms_line">
+								
+					</div>
+
+			</div>
+			<div id="developer">
+				<p>Developer</p>
+
+					<div id="dev_line">
+								
+					</div>
+
+			</div>
+		</div>	
+
+	</div>
+
+
+
+	<div id="mid-nav">
+		<div class="top-mid-nav">
+			<div class="left-mid-nav">
+				<div id="connect"></div>
+			</div>
+			<div class="right-mid-nav">
+				<div class="top-right"></div>
+				<div class="bottom-right"></div>
+			</div>
+		</div>
+		<div class="bottom-mid-nav"></div>
+	</div>
+
+
+</section>
+
+<script src="media/jquery.js"></script>
+<!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+<script src="media/wow.min.js"></script>
+<script src="media/particles.js"></script>
+<script src="media/particles1.js"></script>
+<script src="media/app.js"></script>
+<script src="media/app1.js"></script>
+
+
+
+
+<script type="text/javascript">
+		
+
+	// const slider =document.getElementById("home");
+	// const abtslider =document.getElementById("about");
+	// const wrkslider =document.getElementById("work");
+	// let isDown = false;
+	// let startX;
+	// let scrollLeft;
+	// var navChanger = document.getElementById("menu");
+	// var abtnavChanger = document.getElementById("abtmenu");
+	// var wrknavChanger = document.getElementById("menu");
+	// var cntctnavChanger = document.getElementById("menu");
+	
+	var optiChanger = document.getElementById("optimized");
+	var optiChanger1 = document.getElementById("optimization");
+	var powerChanger = document.getElementById("powered");
+	var serviced1 = document.getElementById("serviced");
+	var branded = document.getElementById("brand");	
+	var droped = document.getElementById("dropdown_menu");
+	var droped1 = document.getElementById("dropdown_menu1");	
+	var contacted = document.getElementById("contacted");
+	var termed = document.getElementById("terms");
+	var developed = document.getElementById("developer");
+	var abouted = document.getElementById("about");
+	var text = ["Light Mode", "Dark Mode"];
+	var counter = 0;
+	var counterr = 0;
+	let test;
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+/* HTML document is loaded. DOM is ready. 
+-------------------------------------------*/
+$(function(){
+
+  // ------- WOW ANIMATED ------ //
+  wow = new WOW(
+  {
+    mobile: false
+  });
+  wow.init();
+
+});
+
+		
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+$(document).ready(function(){
+
+
+			$(".topset").fadeIn();
+			$(".navBottom").fadeIn();
+
+
+		serviced.addEventListener("mouseenter", function( event ) {
+  						// highlight the mouseenter target
+
+   			$("#dropdown_menu").fadeIn().animate({height:"200px"});
+   			$("#dropdown_menu1").animate({height:"0px"}).fadeOut()
+			});
+
+
+			droped.addEventListener("mouseleave", function( event ) {
+
+			$("#dropdown_menu").animate({height:"0px"}).fadeOut()
+
+		});
+
+
+
+		abouted.addEventListener("mouseenter", function( event ) {
+  						// highlight the mouseenter target
+
+   			$("#dropdown_menu1").fadeIn().animate({height:"200px"});
+   			$("#dropdown_menu").animate({height:"0px"}).fadeOut()
+			});
+
+			droped1.addEventListener("mouseleave", function( event ) {
+
+			$("#dropdown_menu1").animate({height:"0px"}).fadeOut()
+
+		});
+
+			branded.addEventListener("mouseleave", function( event ) {
+
+			$("#dropdown_menu").animate({height:"0px"}).fadeOut()
+			$("#dropdown_menu1").animate({height:"0px"}).fadeOut()
+
+		});
+
+
+		contacted.addEventListener("mouseenter", function( event ) {
+  						// highlight the mouseenter target
+
+   			$("#cntct_line").animate({width:"100%"});
+   			$("#dropdown_menu").animate({height:"0px"}).fadeOut()
+   			$("#dropdown_menu1").animate({height:"0px"}).fadeOut()
+			});
+
+			contacted.addEventListener("mouseleave", function( event ) {
+
+			$("#cntct_line").animate({width:"0%"});
+
+		});
+
+		termed.addEventListener("mouseenter", function( event ) {
+  						// highlight the mouseenter target
+
+   			$("#terms_line").animate({width:"50%"});
+			});
+
+			termed.addEventListener("mouseleave", function( event ) {
+
+			$("#terms_line").animate({width:"0%"});
+
+		});
+
+
+		developed.addEventListener("mouseenter", function( event ) {
+  						// highlight the mouseenter target
+
+   			$("#dev_line").animate({width:"50%"});
+			});
+
+			developed.addEventListener("mouseleave", function( event ) {
+
+			$("#dev_line").animate({width:"0%"});
+
+		});
+
+
+
+
+		$("#optimization").click(function(){
+		if (counterr >= text.length) {
+		 		counterr = 0;
+		 	}
+
+		 	powerChanger.innerHTML = text[counterr];
+		 	counterr ++; 
+
+          if (counterr == 0) {
+        optiChanger.style.background = "linear-gradient(0deg, #000000, #000,#262626, #fff, #ffffff)";
+
+
+        $('head').append('<style>#optimized{border: 1px groove #000;}#optimization{border:2px solid #262626;}#powered{color: #424242;}.brand_menu ul li a{color: #262626}#menu span{background-color:#000}.cls-1q,.cls-1qq{stroke:#000}.copyright{color:#424242}#terms{color: #424242;}#developer{color: #424242;}#cntct_line{background: #262626;}#terms_line{background: #262626;}#dev_line{background: #262626;}.abtxt p{color: #000;}.abtxt h1{color: #000;} .codec{color:#000;}.win{background:#fff}</style>');
+
+        if (innerWidth < 1000) {
+           $('head').append('<style>.st0y1,.st0y2{stroke:#000;}</style>');
+
+        }
+
+			    
+			$("#particles-js").delay(100).fadeOut(); 
+			$("#particles1-js").delay(100).fadeIn();   
+
+
+
+
+		optiChanger1.addEventListener("mouseenter", function( event ) {
+  				// highlight the mouseenter target
+
+   				$('head').append('<style>#optimization{background:#262626;}</style>');
+			});
+
+			optiChanger1.addEventListener("mouseleave", function( event ) {
+
+			$('head').append('<style>#optimization{background:transparent;}</style>');
+
+});
+
+      }
+      else if(counterr == 1){
+        optiChanger.style.background = "linear-gradient(90deg, #fff, #ffffff,#262626, #000000)";
+        $('head').append('<style>#optimized{border: 1px groove #fff;}#optimization{border:2px solid #faf5f5;}#powered{color: #fff;} .brand_menu ul li a{color: #faf5f5}  #menu span{background-color:#fff}.menu{box-shadow: 2px 2px 2px #fff;} .cls-1q,.cls-1qq{stroke:#fff}.copyright{color:#fff}.abtxt p{color: #fff;} #terms{color: #faf5f5;}#developer{color: #faf5f5;}#cntct_line{background: #faf5f5;}#terms_line{background: #faf5f5;}#dev_line{background: #faf5f5;}.abtxt h1{color: #fff;}.codec{color:#fff;}.win{background:#000}</style>');
+
+          if (innerWidth < 1000) {
+           $('head').append('<style>.st0y1,.st0y2{stroke:#fff;}</style>');
+        }
+
+
+        $("#particles1-js").delay(100).fadeOut(); 
+		$("#particles-js").delay(100).fadeIn();   
+
+
+			optiChanger1.addEventListener("mouseenter", function( event ) {
+  						// highlight the mouseenter target
+
+   				$('head').append('<style>#optimization{background:#faf5f5;}</style>');
+			});
+
+			optiChanger1.addEventListener("mouseleave", function( event ) {
+
+			$('head').append('<style>#optimization{background:transparent;}</style>');
+
+});
+
+
+
+
+
+      }
+      else{
+        optiChanger.style.background = "linear-gradient(90deg, #000000, #000,#262626, #fff, #ffffff)";
+          $('head').append('<style>#optimized{border: 1px groove #000;}#optimization{border:2px solid #262626;}#powered{color: #424242;}.brand_menu ul li a{color: #262626} #menu span{background-color:#000}.menu{box-shadow: 4px 4px 4px #000;} .cls-1q,.cls-1qq{stroke:#000}.copyright{color:#424242} #terms{color: #262626;}#developer{color: #262626;}#cntct_line{background: #262626;}#terms_line{background: #262626;}#dev_line{background: #262626;}.abtxt p{color: #000;}.abtxt h1{color: #000;}.codec{color:#000;}.win{background:#fff}</style>');
+
+                     if (innerWidth < 1000) {
+           $('head').append('<style>.st0y1,.st0y2{stroke:#000;}</style>');
+        }
+
+			$("#particles-js").delay(100).fadeOut(); 
+			$("#particles1-js").delay(100).fadeIn();  
+
+
+
+
+			optiChanger1.addEventListener("mouseenter", function( event ) {
+  						// highlight the mouseenter target
+
+   				$('head').append('<style>#optimization{background:#262626;}</style>');
+			});
+
+			optiChanger1.addEventListener("mouseleave", function( event ) {
+
+			$('head').append('<style>#optimization{background:transparent;}</style>');
+
+});
+
+
+
+};
+
+    });
+
+});
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
