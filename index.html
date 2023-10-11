@@ -7,8 +7,13 @@
 <link rel="stylesheet" href="media/bootstrap.min.css">
 <link rel="stylesheet" href="media/animate.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="media/style.css">
-\
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
@@ -45,7 +50,7 @@
 
  -->
 	 	
-<section id="pre_loader"></section>
+<section id="contained"></section>
 
 <section id="home">
 
@@ -55,7 +60,7 @@
 
 
 
-	<div class="topset wow fadeInDown" data-wow-delay="1.3s">
+	<div class="topset wow fadeInDown" data-wow-delay=".5s">
 		<div class="row">
 
 			<div class="mode">
@@ -106,7 +111,7 @@
 	</div>	
 
  
-	<div class="navBottom wow fadeInUp" data-wow-delay="1.3s">
+	<div class="navBottom wow fadeInUp" data-wow-delay="1s">
 
 		<div class="copyright">
 			<p>Copyright © 	Connex | 2023</p>
@@ -136,23 +141,33 @@
 
 	<div id="mid-nav">
 		<div class="top-mid-nav">
-			<div class="left-mid-nav">
-				<div id="connect"></div>
+			<div class="left-mid-nav wow bounceIn" data-wow-delay="37s">
+				<div id="connect"><p id="connected">Connect </br> With Us </br></> And </br> Earn</p></div>
 			</div>
 			<div class="right-mid-nav">
-				<div class="top-right"></div>
-				<div class="bottom-right"></div>
+				<div class="top-right"><p id="connexted" class=" wow bounceInRight" data-wow-delay="1.5s">CONNEX</p><p id="connecting" class="wow fadeInUp" data-wow-delay="2.5s">Connecting You To The World<p></p></div>
+				<div id="bottom-right"></div>
+				<div id="bottom-right1"></div>
+				<div id="bottom-right2"></div>
+
 			</div>
 		</div>
-		<div class="bottom-mid-nav"></div>
+		<div class="bottom-mid-nav wow fadeIn" data-wow-delay="35s""></div>
+	</div>
+
+	<div id="menu_bar" data-wow-delay="3s">
+		<span class="span1"></span>
+		<span class="span2"></span>
+		<span class="span3"></span>
 	</div>
 
 
 </section>
 
 <script src="media/jquery.js"></script>
-<!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+<script src="https://kit.fontawesome.com/a0716d05399.js" crossorigin="anonymous"></script>
 <script src="media/wow.min.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script src="media/particles.js"></script>
 <script src="media/particles1.js"></script>
 <script src="media/app.js"></script>
@@ -162,6 +177,12 @@
 
 
 <script type="text/javascript">
+
+window.onload = function(){
+$('#contained').fadeOut();
+// $('#product').fadeIn();
+
+
 		
 
 	// const slider =document.getElementById("home");
@@ -184,6 +205,7 @@
 	var droped1 = document.getElementById("dropdown_menu1");	
 	var contacted = document.getElementById("contacted");
 	var termed = document.getElementById("terms");
+	var menuChanger = document.getElementById("menu_bar");
 	var developed = document.getElementById("developer");
 	var abouted = document.getElementById("about");
 	var text = ["Light Mode", "Dark Mode"];
@@ -213,11 +235,26 @@ $(function(){
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-$(document).ready(function(){
 
 
+    var typed = new Typed('#bottom-right', {
+      strings: ['','','','','','','','Are You Looking For A Simple &amp; Convinient Online Job?', 'Support Your Local Content Creators &amp; Earn.','Are You A Content Creator?', 'Gain Subscribers &amp; Video Views For A Small Fee.', 'Do You Want To Learn New Skills?','Join Our MasterClasses Today!!','Connect. Earn. Learn. Gain.'],
+      typeSpeed: 50,
+    });
+
+
+
+// 
 			$(".topset").fadeIn();
 			$(".navBottom").fadeIn();
+			$("#bottom-right").delay(5000).fadeIn();
+			// $("#bottom-right2").delay(2000).fadeIn();
+			// $("#bottom-right").delay(25000).fadeOut();
+			// $("#bottom-right1").delay(30000).fadeIn();
+
+
+
+
 
 
 		serviced.addEventListener("mouseenter", function( event ) {
@@ -311,7 +348,7 @@ $(document).ready(function(){
         optiChanger.style.background = "linear-gradient(0deg, #000000, #000,#262626, #fff, #ffffff)";
 
 
-        $('head').append('<style>#optimized{border: 1px groove #000;}#optimization{border:2px solid #262626;}#powered{color: #424242;}.brand_menu ul li a{color: #262626}#menu span{background-color:#000}.cls-1q,.cls-1qq{stroke:#000}.copyright{color:#424242}#terms{color: #424242;}#developer{color: #424242;}#cntct_line{background: #262626;}#terms_line{background: #262626;}#dev_line{background: #262626;}.abtxt p{color: #000;}.abtxt h1{color: #000;} .codec{color:#000;}.win{background:#fff}</style>');
+        $('head').append('<style>#optimized{border: 1px groove #000;}#optimization{border:2px solid #262626;}#powered{color: #424242;}.brand_menu ul li a{color: #262626}#menu span{background-color:#000}.cls-1q,.cls-1qq{stroke:#000}.copyright{color:#424242}#terms{color: #424242;}#developer{color: #424242;}#cntct_line{background: #262626;}#terms_line{background: #262626;}#dev_line{background: #262626;}.abtxt p{color: #000;}.abtxt h1{color: #000;}#connect{ border: 7px dotted #262626;} #connected{color:#262626} #connexted{color:#262626}#connecting{color:#262626}#bottom-right{color:#262626}.codec{color:#000;}.win{background:#fff} #menu_bar span{background:#262626;}</style>');
 
         if (innerWidth < 1000) {
            $('head').append('<style>.st0y1,.st0y2{stroke:#000;}</style>');
@@ -340,7 +377,7 @@ $(document).ready(function(){
       }
       else if(counterr == 1){
         optiChanger.style.background = "linear-gradient(90deg, #fff, #ffffff,#262626, #000000)";
-        $('head').append('<style>#optimized{border: 1px groove #fff;}#optimization{border:2px solid #faf5f5;}#powered{color: #fff;} .brand_menu ul li a{color: #faf5f5}  #menu span{background-color:#fff}.menu{box-shadow: 2px 2px 2px #fff;} .cls-1q,.cls-1qq{stroke:#fff}.copyright{color:#fff}.abtxt p{color: #fff;} #terms{color: #faf5f5;}#developer{color: #faf5f5;}#cntct_line{background: #faf5f5;}#terms_line{background: #faf5f5;}#dev_line{background: #faf5f5;}.abtxt h1{color: #fff;}.codec{color:#fff;}.win{background:#000}</style>');
+        $('head').append('<style>#optimized{border: 1px groove #fff;}#optimization{border:2px solid #faf5f5;}#powered{color: #fff;} .brand_menu ul li a{color: #faf5f5}  #menu span{background-color:#fff}.menu{box-shadow: 2px 2px 2px #fff;} .cls-1q,.cls-1qq{stroke:#fff}.copyright{color:#fff}.abtxt p{color: #fff;} #terms{color: #faf5f5;}#developer{color: #faf5f5;}#cntct_line{background: #faf5f5;}#terms_line{background: #faf5f5;}#dev_line{background: #faf5f5;}.abtxt h1{color: #fff;}#connect{ border: 7px dotted #faf5f5;} #connected{color:#faf5f5} #connexted{color:#faf5f5}#connecting{color:#faf5f5}#bottom-right{color:#faf5f5}.codec{color:#fff;}.win{background:#000} #menu_bar span{background:#faf5f5;}</style>');
 
           if (innerWidth < 1000) {
            $('head').append('<style>.st0y1,.st0y2{stroke:#fff;}</style>');
@@ -370,7 +407,7 @@ $(document).ready(function(){
       }
       else{
         optiChanger.style.background = "linear-gradient(90deg, #000000, #000,#262626, #fff, #ffffff)";
-          $('head').append('<style>#optimized{border: 1px groove #000;}#optimization{border:2px solid #262626;}#powered{color: #424242;}.brand_menu ul li a{color: #262626} #menu span{background-color:#000}.menu{box-shadow: 4px 4px 4px #000;} .cls-1q,.cls-1qq{stroke:#000}.copyright{color:#424242} #terms{color: #262626;}#developer{color: #262626;}#cntct_line{background: #262626;}#terms_line{background: #262626;}#dev_line{background: #262626;}.abtxt p{color: #000;}.abtxt h1{color: #000;}.codec{color:#000;}.win{background:#fff}</style>');
+          $('head').append('<style>#optimized{border: 1px groove #000;}#optimization{border:2px solid #262626;}#powered{color: #424242;}.brand_menu ul li a{color: #262626} #menu span{background-color:#000}.menu{box-shadow: 4px 4px 4px #000;} .cls-1q,.cls-1qq{stroke:#000}.copyright{color:#424242} #terms{color: #262626;}#developer{color: #262626;}#cntct_line{background: #262626;}#terms_line{background: #262626;}#dev_line{background: #262626;}.abtxt p{color: #000;}.abtxt h1{color: #000;}#connect{ border: 7px dotted #262626;} #connected{color:#262626} #connexted{color:#262626}#connecting{color:#262626}#bottom-right{color:#262626} .codec{color:#000;}.win{background:#fff} #menu_bar span{background:#262626;}</style>');
 
                      if (innerWidth < 1000) {
            $('head').append('<style>.st0y1,.st0y2{stroke:#000;}</style>');
@@ -400,7 +437,7 @@ $(document).ready(function(){
 
     });
 
-});
+};
 
 
 
